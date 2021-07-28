@@ -1,2 +1,1 @@
-# Website2
-Second attempt to a website.
+My second attempt at a website.
