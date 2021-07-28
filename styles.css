@@ -33,6 +33,7 @@ VIVID VIOLET
 Dark shades
 Use as the text color for dark-on-light designs, or as the background for inverted designs.
 */
+
 html,body{
     margin:0;
     padding:0;
@@ -46,17 +47,18 @@ html,body{
 }
 
 #ContentContainer{
-    width:100%;
+    width:70%;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: baseline;
+    margin:auto;
+    gap:3em;
 }
 
 .textContainer{
     max-width: 25%;
-    box-sizing: border-box;
 }
 
 .textCard{
@@ -99,5 +101,19 @@ article{
 p{
     font-size:14px;
     line-height: 1.5em;
+
+}
+
+@media (max-width:768px){
+    #ContentContainer{
+        flex-direction:column;
+        width:65%;
+        justify-content: space-evenly;
+        justify-items:auto;
+    }
+
+    .textContainer,.textCard{
+        max-width:100%;
+    }
 
 }
