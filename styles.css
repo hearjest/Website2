@@ -34,14 +34,15 @@ Dark shades
 Use as the text color for dark-on-light designs, or as the background for inverted designs.
 */
 
-html,body{
+body{
     margin:0;
     padding:0;
     background-color:#F5F8FA;
     font-family:'Roboto', sans-serif;
+    min-height:100%;
 }
 
-#MainContainer{
+.MainContainer{
     height:100%;
 }
 
@@ -117,19 +118,21 @@ p{
     }
 }
 
-#MainContainer.darkTheme p{
+body.darkTheme p{
     color:#F5F8FA;
 }
 
-#MainContainer.darkTheme{
+body.darkTheme{
     background-color: rgb(65,65,65);
 }
 
-#MainContainer.darkTheme .textContainer{
+body.darkTheme .textContainer{
     background-color:#803E86;
 }
 
-#MainContainer.darkTheme article{
+body.darkTheme article{
     color:#ecc790;
 }
 
+.material-icons-outlined{ color: rgba(0, 0, 0, 0.54); }
+.material-icons-outlined { color: #803E86; }

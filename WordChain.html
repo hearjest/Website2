@@ -1,3 +1,55 @@
-<!--
-    
--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Word Chain</title>
+        <script src='scripts.js'defer></script>
+        <script src='WordChainScripts.js'defer></script>
+        <link rel='Stylesheet' href='styles.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    </head>
+
+    <body>
+        <div class='MainContainer'>
+            <header>
+                <div style='flex-grow:0.5;margin-left:1em;'>
+                    <a href='https://github.com/hearjest/Website2'>hearJest</a>
+                </div>
+                <div >
+                    <button class='themeToggle'style='margin-right:1.5em'>
+                        <span class="material-icons-outlined">
+                        dark_mode
+                        </span></button>
+                    <a href='#'>Stuff</a>
+                    <a href='#'>Things</a>
+                    <a href='#'>About Me</a>    
+                </div>
+            </header>
+
+            <div id='WordChainContainer'style='margin:auto;width:30%;height:500px; text-align:center;'>
+                <div style='font-size:50px;color:#A64484'>
+                    Word Chains
+                </div>
+                <div id='Instructions'>
+                    Directions: Enter a word, it must not end in the letter n. It cannot be one character or less.
+                </div>
+                 <div id='nextLetterContainer' style='font-size:20px;'>
+                    The next letter is: <span id='nextLetter'></span>
+                </div>
+                <div id='scoreDisplay'>
+                    Score: 0
+                </div>
+                <div style='top:30%;position:relative;'>
+                    <input type='text' id='word'>
+                    <button type="button" id='submitWord'>Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
