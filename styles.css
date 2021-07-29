@@ -37,7 +37,6 @@ Use as the text color for dark-on-light designs, or as the background for invert
 html,body{
     margin:0;
     padding:0;
-    height:100%;
     background-color:#F5F8FA;
     font-family:'Roboto', sans-serif;
 }
@@ -52,20 +51,21 @@ html,body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    align-items: baseline;
+    align-items: center;
     margin:auto;
-    gap:3em;
+    gap:1em;
 }
 
 .textContainer{
     max-width: 35%;
+    padding:20px 30px 20px 30px;
 }
 
 .textCard{
     background-color:#A64484;
-    max-width:30%;
+    max-width:35%;
     color:#F5F8FA;
-    padding:10px 25px 10px 25px;
+    padding:20px 30px 20px 30px;
     border-radius: 5%;
 }
 
@@ -115,5 +115,21 @@ p{
     .textContainer,.textCard{
         max-width:100%;
     }
-
 }
+
+#MainContainer.darkTheme p{
+    color:#F5F8FA;
+}
+
+#MainContainer.darkTheme{
+    background-color: rgb(65,65,65);
+}
+
+#MainContainer.darkTheme .textContainer{
+    background-color:#803E86;
+}
+
+#MainContainer.darkTheme article{
+    color:#ecc790;
+}
+
